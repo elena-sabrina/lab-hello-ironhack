@@ -8,8 +8,10 @@ class ArgumentList extends React.Component {
         <ul>
           <li>
             <img src={image} alt={alt} />
-            <h3>{name}</h3>
-            <p>{copy}</p>
+            <div>
+                <h3>{name}</h3>
+                <p>{copy}</p>
+            </div>
           </li>
         </ul>
       </div>
@@ -19,7 +21,7 @@ class ArgumentList extends React.Component {
 
 function App() {
   return (
-    <div>
+    <div className="argumentlist">
       <ArgumentList
         name='Declerative'
         image='/images/icon1.png'
